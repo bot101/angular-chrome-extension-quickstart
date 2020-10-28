@@ -1,6 +1,6 @@
 {
-  "name": "Great Extension",
-  "version": "1.0",
+  "name": "Angular Extension",
+  "version": "0.0.1",
   "description": "Build an Extension with Angular",
   "manifest_version": 2,
   "permissions": ["activeTab", "webNavigation"],
@@ -9,5 +9,8 @@
   },
   "background": {
     "scripts": ["background-es2015.js", "runtime-es2015.js"]
+  },
+  "options_ui": {
+    "page": "/index.html?page=options"
   }
 }

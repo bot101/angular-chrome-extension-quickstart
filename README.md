@@ -1,27 +1,40 @@
-# Unitrx
+# Angular Browser (Chrome, Firefox, Edge) Extension Quickstart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+Looking to build a chrome/firefox/edge extension with Angular? This project sets you up in under **5 minutes**.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Clone the project to your local machine.
 
-## Code scaffolding
+```bash
+git clone bot101/angular-chrome-extension-quickstart.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run NPM install
 
-## Build
+```
+npm i
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Build project
 
-## Running unit tests
+```
+npm run build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Once the project builds successfully, open Google Chrome's extension page
+[chrome://extensions/](chrome://extensions/), enable developer mode, click on load unpacked and choose the generated `dist/` folder and you have a working chrome extension with live reload, testing setup, ngRx and husky set up to enable you to develop high-quality extensions!
 
-## Running end-to-end tests
+## Usage
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+You can continue development as you would any angular project but are restricted by what is available to chrome/firefox extensions. All background code go to `background.ts`, options page content goes into the `OptionsComponent` and popup page content goes into `DashboardComponent`.
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

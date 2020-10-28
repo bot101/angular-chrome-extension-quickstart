@@ -1,6 +1,6 @@
 {
-  "name": "Great Extension",
-  "version": "1.0",
+  "name": "Angular Extension",
+  "version": "0.0.1",
   "description": "Build an Extension with Angular",
   "manifest_version": 2,
   "permissions": ["activeTab", "webNavigation"],
