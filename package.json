@@ -14,7 +14,7 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && ng test --watch=false",
+      "pre-commit": "ng lint && ng test --watch=false",
       "pre-push": "ng build --aot true"
     }
   },
