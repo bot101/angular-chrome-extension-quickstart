@@ -8,9 +8,6 @@
     "default_popup": "index.html"
   },
   "background": {
-    "scripts": ["background.js", "runtime.js"]
-  },
-  "options_ui": {
-    "page": "/index.html?page=options"
+    "scripts": ["background-es2015.js", "runtime-es2015.js"]
   }
 }
