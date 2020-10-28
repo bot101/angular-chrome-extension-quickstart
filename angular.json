@@ -15,8 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "./custom-webpack.config.js"
+            },
             "outputPath": "dist/unitrx",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -25,7 +28,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.scss"
@@ -89,7 +93,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.scss"
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "unitrx"
+    }
+  },
+  "defaultProject": "unitrx",
+  "cli": {
+    "analytics": "340b52a9-b5e0-45af-91a4-1344e5af5488"
+  }
 }
